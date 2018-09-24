@@ -25,6 +25,9 @@ public class UserActivity extends Activity {
     @Optional
     String company;
 
+    @Optional
+    String workPlace;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,5 +36,6 @@ public class UserActivity extends Activity {
         ((TextView)findViewById (R.id.ageView)).setText(String.valueOf(age));
         ((TextView)findViewById (R.id.titleView)).setText(title);
         ((TextView)findViewById (R.id.companyView)).setText(company);
+        ((TextView)findViewById (R.id.workPlaceView)).setText(workPlace);
     }
 }
