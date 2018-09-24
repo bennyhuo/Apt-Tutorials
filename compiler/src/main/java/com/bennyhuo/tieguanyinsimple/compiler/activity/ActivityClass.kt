@@ -16,6 +16,8 @@ class ActivityClass(val typeElement: TypeElement) {
 
     val isAbstract = typeElement.modifiers.contains(ABSTRACT)
 
+    val builder = ActivityClassBuilder(this)
+
     val isKotlin = typeElement.getAnnotation(META_DATA) != null
 
     override fun toString(): String {
