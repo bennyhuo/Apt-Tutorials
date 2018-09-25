@@ -1,6 +1,8 @@
 package com.bennyhuo.tieguanyinsimple.compiler.activity
 
 import com.bennyhuo.tieguanyinsimple.compiler.activity.method.ConstantBuilder
+import com.bennyhuo.tieguanyinsimple.compiler.activity.method.InjectMethodBuilder
+import com.bennyhuo.tieguanyinsimple.compiler.activity.method.SaveStateMethodBuilder
 import com.bennyhuo.tieguanyinsimple.compiler.activity.method.StartMethodBuilder
 import com.squareup.javapoet.JavaFile
 import com.squareup.javapoet.TypeSpec
@@ -25,6 +27,8 @@ class ActivityClassBuilder(private val activityClass: ActivityClass) {
 
         ConstantBuilder(activityClass).build(typeBuilder)
         StartMethodBuilder(activityClass).build(typeBuilder)
+        SaveStateMethodBuilder(activityClass).build(typeBuilder)
+        InjectMethodBuilder(activityClass).build(typeBuilder)
 
         writeJavaToFile(filer, typeBuilder.build())
     }
