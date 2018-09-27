@@ -1,10 +1,9 @@
 package com.bennyhuo.tieguanyinsimple.compiler.activity.entity
 
-import com.bennyhuo.aptutils.types.asTypeMirror
+import com.bennyhuo.aptutils.types.isSameTypeWith
 import com.bennyhuo.tieguanyinsimple.annotations.Optional
 import com.sun.tools.javac.code.Symbol.VarSymbol
 import javax.lang.model.type.TypeKind
-import javax.lang.model.type.TypeKind.BOOLEAN
 
 class OptionalField(symbol: VarSymbol): Field(symbol) {
 
@@ -15,13 +14,20 @@ class OptionalField(symbol: VarSymbol): Field(symbol) {
 
     init {
         val optional = symbol.getAnnotation(Optional::class.java)
-        when(symbol.type.kind){
-            BOOLEAN -> defaultValue = optional.booleanValue
-            TypeKind.BYTE, TypeKind.SHORT, TypeKind.INT, TypeKind.LONG, TypeKind.CHAR
-                -> defaultValue = optional.intValue
-            TypeKind.FLOAT, TypeKind.DOUBLE -> defaultValue = optional.floatValue
-            else -> if(symbol.type == String::class.java.asTypeMirror()){
-                defaultValue = """"${optional.stringValue}""""
+        defaultValue = when (symbol.type.kind) {
+            TypeKind.BOOLEAN -> optional.booleanValue
+            TypeKind.CHAR -> "'${optional.charValue}'"
+            TypeKind.BYTE -> "(byte) ${optional.byteValue}"
+            TypeKind.SHORT -> "(short) ${optional.shortValue}"
+            TypeKind.INT -> optional.intValue
+            TypeKind.LONG -> "${optional.longValue}L"
+            TypeKind.FLOAT -> "${optional.floatValue}f"
+            TypeKind.DOUBLE -> optional.doubleValue
+            else -> if (symbol.type.isSameTypeWith(String::class)) {
+                //注意字面量的引号
+                """"${optional.stringValue}""""
+            } else {
+                null
             }
         }
     }

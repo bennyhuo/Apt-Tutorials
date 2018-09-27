@@ -26,15 +26,9 @@ class InjectMethodBuilder(private val activityClass: ActivityClass) {
         activityClass.fields.forEach { field ->
             val name = field.name
             val typeName = field.asJavaTypeName().box()
-            val unboxedTypeName =
-            if(typeName.isBoxedPrimitive){
-                typeName.unbox()
-            } else {
-                typeName
-            }
 
             if(field is OptionalField){
-                injectMethodBuilder.addStatement("\$T \$LValue = \$T.<\$T>get(extras, \$S, (\$T)\$L)", typeName, name, BUNDLE_UTILS.java, typeName, name, unboxedTypeName, field.defaultValue)
+                injectMethodBuilder.addStatement("\$T \$LValue = \$T.<\$T>get(extras, \$S, \$L)", typeName, name, BUNDLE_UTILS.java, typeName, name, field.defaultValue)
             } else {
                 injectMethodBuilder.addStatement("\$T \$LValue = \$T.<\$T>get(extras, \$S)", typeName, name, BUNDLE_UTILS.java, typeName, name)
             }
