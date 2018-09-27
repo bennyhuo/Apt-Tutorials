@@ -1,6 +1,7 @@
 package com.bennyhuo.tieguanyinsimple.compiler.activity.entity
 
 import com.bennyhuo.aptutils.types.asJavaTypeName
+import com.bennyhuo.aptutils.types.asKotlinTypeName
 import com.sun.tools.javac.code.Symbol
 
 open class Field(private val symbol: Symbol.VarSymbol): Comparable<Field>{
@@ -18,6 +19,7 @@ open class Field(private val symbol: Symbol.VarSymbol): Comparable<Field>{
     }
 
     fun asJavaTypeName() = symbol.type.asJavaTypeName()
+    open fun asKotlinTypeName() = symbol.type.asKotlinTypeName()
 
     override fun toString(): String {
         return "$name:${symbol.type}"

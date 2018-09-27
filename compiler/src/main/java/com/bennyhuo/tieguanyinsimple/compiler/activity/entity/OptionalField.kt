@@ -26,6 +26,8 @@ class OptionalField(symbol: VarSymbol): Field(symbol) {
         }
     }
 
+    override fun asKotlinTypeName() = super.asKotlinTypeName().asNullable()
+
     override fun compareTo(other: Field): Int {
         return if(other is OptionalField){
             super.compareTo(other)
