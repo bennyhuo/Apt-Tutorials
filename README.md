@@ -63,7 +63,7 @@
 
 这一节主要通过为被标注的 Activity 生成扩展方法来介绍如何生成 Kotlin 代码。
 
-**腾讯视频：** 待发布
+**腾讯视频：** https://v.qq.com/x/page/l0728y2inrf.html
 
 **Bilibili：** https://www.bilibili.com/video/av32905508/?p=7
 
@@ -71,7 +71,7 @@
 
 这一节对整个课程作了一个总结。
 
-**腾讯视频：** 待发布
+**腾讯视频：** https://v.qq.com/x/page/m072848g85p.html
 
 **Bilibili：** https://www.bilibili.com/video/av32905508/?p=8
 
