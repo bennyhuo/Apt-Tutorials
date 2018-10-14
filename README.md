@@ -14,66 +14,132 @@
 
 作为课程的第一节，我们简单介绍了一下 Apt 的工作原理和流程，并对整个视频课程涉及的内容做了介绍。
 
-**腾讯视频：** https://v.qq.com/x/page/l0728uxh61x.html
+**腾讯视频：** 
 
-**Bilibili：** https://www.bilibili.com/video/av32905508/?p=1
+https://v.qq.com/x/page/l0728uxh61x.html
+
+**Bilibili：** 
+
+https://www.bilibili.com/video/av32905508/?p=1
+
+**Youtube：**
+
+https://www.youtube.com/watch?v=jA5kQwGM-tU&list=PLGzwzBsMvr-lmXMu1YNfitwj6358b7VtP&index=1
 
 ## 2. 搭建工程
 
 这一节主要介绍注解处理器工程的结构。
 
-**腾讯视频：** https://v.qq.com/x/page/o07284u5rju.html
+**腾讯视频：** 
+
+https://v.qq.com/x/page/o07284u5rju.html
 
 
-**Bilibili：** https://www.bilibili.com/video/av32905508/?p=2
+**Bilibili：** 
+
+https://www.bilibili.com/video/av32905508/?p=2
+
+**Youtube：**
+
+https://www.youtube.com/watch?v=p3oBTIcWty0&list=PLGzwzBsMvr-lmXMu1YNfitwj6358b7VtP&index=2
 
 ## 3. 解析注解
 
 这一节主要介绍如何解析注解获取被标注的元素信息。
 
-**腾讯视频：** https://v.qq.com/x/page/z07286r97mz.html
+**腾讯视频：** 
 
-**Bilibili：** https://www.bilibili.com/video/av32905508/?p=3
+https://v.qq.com/x/page/z07286r97mz.html
+
+**Bilibili：** 
+
+https://www.bilibili.com/video/av32905508/?p=3
+
+**Youtube：**
+
+https://www.youtube.com/watch?v=CPhdkOG6RRw&list=PLGzwzBsMvr-lmXMu1YNfitwj6358b7VtP&index=3
 
 ## 4. 生成常量
 
 这一节为被标注的属性生成一些常量字符串来作为它们的 Key，也展示了如何为生成的 Java 类添加常量。
 
-**腾讯视频：** https://v.qq.com/x/page/k0728tn7sty.html
+**腾讯视频：** 
 
-**Bilibili：** https://www.bilibili.com/video/av32905508/?p=4
+https://v.qq.com/x/page/k0728tn7sty.html
+
+**Bilibili：** 
+
+https://www.bilibili.com/video/av32905508/?p=4
+
+**Youtube：**
+
+https://www.youtube.com/watch?v=X13WcxWMVA4&index=4&list=PLGzwzBsMvr-lmXMu1YNfitwj6358b7VtP
 
 ## 5. 生成 start 方法
 
 这一节为被标注的 Activity 生成携带被标注的属性作为参数的 start 的方法，也展示了如何为生成的 Java 类添加方法。
 
-**腾讯视频：** https://v.qq.com/x/page/x0728j7j7a6.html
+**腾讯视频：** 
 
-**Bilibili：** https://www.bilibili.com/video/av32905508/?p=5
+https://v.qq.com/x/page/x0728j7j7a6.html
+
+**Bilibili：** 
+
+https://www.bilibili.com/video/av32905508/?p=5
+
+**Youtube：**
+
+https://www.youtube.com/watch?v=a66T8ImLAMw&list=PLGzwzBsMvr-lmXMu1YNfitwj6358b7VtP&index=5
 
 ## 6. 生成注入和状态保存的方法
 
 这一节为被标注的 Activity 生成注入属性的 inject 方法和保存状态的 saveState 方法。
 
-**腾讯视频：** https://v.qq.com/x/page/d0728uitqdr.html
+**腾讯视频：** 
 
-**Bilibili：** https://www.bilibili.com/video/av32905508/?p=6
+https://v.qq.com/x/page/d0728uitqdr.html
+
+**Bilibili：** 
+
+https://www.bilibili.com/video/av32905508/?p=6
+
+**Youtube：**
+
+https://www.youtube.com/watch?v=fCUje0sjwos&list=PLGzwzBsMvr-lmXMu1YNfitwj6358b7VtP&index=6
+
 
 ## 7. 生成 Kotlin 代码
 
 这一节主要通过为被标注的 Activity 生成扩展方法来介绍如何生成 Kotlin 代码。
 
-**腾讯视频：** https://v.qq.com/x/page/l0728y2inrf.html
+**腾讯视频：** 
 
-**Bilibili：** https://www.bilibili.com/video/av32905508/?p=7
+https://v.qq.com/x/page/l0728y2inrf.html
+
+**Bilibili：** 
+
+https://www.bilibili.com/video/av32905508/?p=7
+
+**Youtube：**
+
+https://www.youtube.com/watch?v=2Z6qBTo3r-k&list=PLGzwzBsMvr-lmXMu1YNfitwj6358b7VtP&index=7
+
 
 ## 8. 小结
 
 这一节对整个课程作了一个总结。
 
-**腾讯视频：** https://v.qq.com/x/page/m072848g85p.html
+**腾讯视频：** 
 
-**Bilibili：** https://www.bilibili.com/video/av32905508/?p=8
+https://v.qq.com/x/page/m072848g85p.html
+
+**Bilibili：** 
+
+https://www.bilibili.com/video/av32905508/?p=8
+
+**Youtube：**
+
+https://www.youtube.com/watch?v=aQHmOIS88Zo&list=PLGzwzBsMvr-lmXMu1YNfitwj6358b7VtP&index=8
 
 ---
 
